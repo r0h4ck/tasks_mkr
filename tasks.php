@@ -14,5 +14,12 @@ class Depo
 }
 $bmw = new Autobus();
 $bmw -> places >= 0;
-$bmw -> count($counry = 1);
+$bmw -> count(($bmw -> $counry = 1));
+
+class TestCount extends \PHPUnit_Framework_TestCase
+{
+    public function TestCount() {
+        $bmw -> count(($bmw -> $counry = 1));
+    }
+}
 ?>
